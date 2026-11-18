@@ -1,0 +1,22 @@
+# 網域根目錄的 robots.txt：對 https://nursingwork.github.io/ 底下的所有網頁生效（包含 /tph-oh-island/）
+User-agent: *
+Allow: /
+
+# 明確允許主要 AI 搜尋與模型的爬蟲
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://nursingwork.github.io/sitemap.xml
+Sitemap: https://nursingwork.github.io/tph-oh-island/sitemap.xml

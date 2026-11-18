@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <!-- 這是網域根目錄 https://nursingwork.github.io/ 的入口頁。
+       用途：讓 Google 正確顯示網站名稱「職醫守護島」（網站名稱只讀網域根目錄的設定），
+       並引導訪客進入放在 /tph-oh-island/ 的正式網站。請勿在這個 repository 建立名為 tph-oh-island 的資料夾。 -->
+  <title>職醫守護島｜衛生福利部臺北醫院 職業醫學科</title>
+  <meta name="description" content="職醫守護島是衛生福利部臺北醫院職業醫學科的服務導覽網站：職業病與傷害診治門診、企業特約臨場健康服務、職能復健與勞動能力減損鑑定。本院為勞動部職業傷病診治網絡醫院。">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <link rel="canonical" href="https://nursingwork.github.io/">
+  <meta name="theme-color" content="#060913">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:site_name" content="職醫守護島">
+  <meta property="og:title" content="職醫守護島｜衛生福利部臺北醫院 職業醫學科">
+  <meta property="og:description" content="職業病門診、企業臨場健康服務、職能復健與勞動能力減損鑑定。">
+  <meta property="og:url" content="https://nursingwork.github.io/">
+  <meta property="og:image" content="https://nursingwork.github.io/tph-oh-island/assets/og-cover.jpg">
+  <link rel="icon" type="image/png" sizes="64x64" href="/tph-oh-island/assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/tph-oh-island/assets/apple-touch-icon.png">
+
+  <!-- 網站名稱：Google 依這段 WebSite 結構化資料決定搜尋結果上方顯示的名稱 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "職醫守護島",
+    "alternateName": ["臺北醫院職業醫學科", "衛生福利部臺北醫院 職業醫學科"],
+    "url": "https://nursingwork.github.io/",
+    "inLanguage": "zh-TW",
+    "publisher": {
+      "@type": "MedicalClinic",
+      "name": "衛生福利部臺北醫院 職業醫學科",
+      "url": "https://nursingwork.github.io/tph-oh-island/",
+      "logo": "https://nursingwork.github.io/tph-oh-island/assets/logo-mark.png"
+    }
+  }
+  </script>
+
+  <!-- Google Analytics 4（與正式網站同一個評估 ID） -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D66JKDGD3F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D66JKDGD3F', { allow_google_signals: false, allow_ad_personalization_signals: false });
+  </script>
+
+  <style>
+    :root { --bg: #060913; --card: #0f172a; --line: rgba(255,255,255,0.1); --text: #e2e8f0; --muted: #94a3b8; --green: #84c845; --blue: #2b9fe2; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      min-height: 100vh; background: radial-gradient(ellipse at 50% 0%, #10264a 0%, var(--bg) 60%); color: var(--text);
+      font-family: "PingFang TC", "Noto Sans TC", "Noto Sans CJK TC", "Microsoft JhengHei", system-ui, sans-serif;
+      display: flex; align-items: center; justify-content: center;
+      padding: max(24px, env(safe-area-inset-top)) 20px max(24px, env(safe-area-inset-bottom));
+    }
+    main { width: 100%; max-width: 560px; text-align: center; }
+    .logo { width: 76px; height: 76px; border-radius: 20px; background: #fff; padding: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.35); }
+    h1 { margin: 20px 0 4px; font-size: 32px; letter-spacing: 0.04em; color: #fff; }
+    .sub { margin: 0; color: var(--muted); font-size: 15px; }
+    .lead { margin: 22px auto 26px; max-width: 470px; line-height: 1.8; font-size: 15px; }
+    .actions { display: flex; flex-direction: column; gap: 10px; }
+    .btn { display: block; padding: 15px 18px; border-radius: 16px; text-decoration: none; font-weight: 700; font-size: 16px; }
+    .btn-primary { background: linear-gradient(90deg, #0070b0, #549620); color: #fff; box-shadow: 0 8px 24px rgba(0,112,176,0.35); }
+    .btn-secondary { background: var(--card); color: var(--text); border: 1px solid var(--line); }
+    .btn:focus-visible { outline: 3px solid var(--green); outline-offset: 3px; }
+    ul { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; text-align: left; }
+    li { background: rgba(15,23,42,0.7); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; font-size: 13px; color: var(--text); }
+    footer { margin-top: 28px; font-size: 12px; color: var(--muted); line-height: 1.8; }
+    footer a { color: var(--green); }
+    @media (max-width: 420px) { h1 { font-size: 27px; } ul { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="/tph-oh-island/assets/logo-mark.png" alt="衛生福利部臺北醫院院徽" width="76" height="76">
+    <h1>職醫守護島</h1>
+    <p class="sub">衛生福利部臺北醫院 職業醫學科</p>
+    <p class="lead">以 3D 島嶼介紹職業醫學科的門診與企業臨場健康服務。本院為勞動部職業傷病診治網絡醫院。</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/tph-oh-island/">進入 3D 服務導覽</a>
+      <a class="btn btn-secondary" href="/tph-oh-island/services.html">文字版服務說明與常見問題</a>
+    </div>
+    <ul aria-label="服務項目">
+      <li>職業病與傷害診治</li>
+      <li>企業特約臨場健康服務</li>
+      <li>工作環境危害評估</li>
+      <li>員工工作適應性評估</li>
+      <li>職能復健與重返職場</li>
+      <li>勞動能力減損鑑定</li>
+    </ul>
+    <footer>
+      新北市新莊區思源路127號（醫療大樓門診區）｜(02) 2276-5566 分機 3242、3244<br>
+      <a href="https://www.tph.mohw.gov.tw/?aid=60&amp;pid=225">衛生福利部臺北醫院 職業醫學科 官方網頁</a>
+    </footer>
+  </main>
+</body>
+</html>
